@@ -39,14 +39,17 @@ project-root/
 
 ### Setup and Configuration
 
-1. **Clone the Repository**
+1. ## Create a new folder on your host machine
+   Go to your desired location and create a <repository-directory> to contain the project
+   
+2. **Clone the Repository**
 
    ```bash
    git clone https://github.com/Ambmo/nawy.git
    cd <repository-directory>
    ```
 
-2. **Build and Start Containers**
+3. **Build and Start Containers**
 
    Use Docker Compose to build and start all containers:
 
