@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* //////////////////// Components //////////////////// */
+.apartment-card, .apartment-list, .apartment-details, form {
+  margin: 20px;
+}
+
+.mobile-view .apartment-card {
+  /* Mobile-specific styles here */
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between lines */
+}
+
+.inline-label {
+  font-weight: bold;
+}
+
+.inline-heading {
+  font-size: 1.5em; /* Adjust size as needed */
+  margin: 0;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px; /* Space between details */
+}
+
+.details-container p {
+  margin: 0;
+  font-size: 1em; /* Adjust size as needed */
+}
+
+.add-apartment-link {
+  display: inline-block;
+  background-color: #0070f3; /* Adjust the color as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px; /* Space below the link */
+  transition: background-color 0.3s ease;
+}
+
+.add-apartment-link:hover {
+  background-color: #005bb5; /* Darker shade for hover effect */
+}
+
+.web-view .add-apartment-link {
+  display: inline-block; /* Ensure it's visible in the web view */
+}
+
+.mobile-view .add-apartment-link {
+  display: none; /* Hide the link in mobile view */
+}
+
+.container {
+  padding: 20px;
+}
+
+.return-button {
+  display: inline-block;
+  background-color: #0070f3; /* Adjust color as needed */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px; /* Space below the button */
+  transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #005bb5; /* Darker shade for hover effect */
+}
