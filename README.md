@@ -40,7 +40,7 @@ project-root/
 ### Setup and Configuration
 
 1. ## Create a new folder on your host machine
-   Go to your desired location and create a <repository-directory> to contain the project
+   Go to your desired location and create a "<repository-directory>" to contain the project
    
 2. **Clone the Repository**
 
